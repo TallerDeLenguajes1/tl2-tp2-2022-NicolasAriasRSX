@@ -44,7 +44,7 @@
                 {
                     Console.WriteLine("Ingrese el DNI del alumno.");
                     dni= Convert.ToInt32(Console.ReadLine());
-                } while (dni > 0 );
+                } while (dni < 0 );
             }
             catch (System.Exception ex)
             {
@@ -69,7 +69,7 @@
                 {
                     Console.WriteLine("Seleccione el curso\n1 - Voley\n2 - Atletismo\n3 - Futbol");
                     curso= Convert.ToInt32(Console.ReadLine());
-                } while (curso < 4 && curso > 0);
+                } while (curso < 1 && curso > 3);
 
             }
             catch (System.Exception ex)
